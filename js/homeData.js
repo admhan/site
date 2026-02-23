@@ -13,6 +13,7 @@ export const homeData = {
   },
   about: {
     title: 'About',
+    image: 'photos/adhannachi.JPG',
     paragraphs: [
       "I'm a passionate Data Scientist and AI Engineer with expertise in building end-to-end machine learning systems. My work spans from exploratory data analysis to deploying production-grade models that drive business decisions.",
       'With a strong foundation in statistics, computer science, and software engineering, I bridge the gap between theoretical models and practical applications. I specialize in creating scalable data pipelines, implementing advanced ML algorithms, and designing database architectures that support high-performance analytics.',

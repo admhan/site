@@ -12,36 +12,42 @@ export const projectsPageData = {
       title: 'Metro Affluence Prediction',
       description: 'Machine learning model predicting neighborhood affluence using transit data, demographic features, and geospatial analysis.',
       tags: ['Random Forest', 'XGBoost', 'Feature Engineering'],
+      image: '',
       ctaLabel: 'View Project'
     },
     {
       title: 'CV Parsing API',
       description: 'LLM-powered API that extracts structured JSON from resumes with 95% accuracy using GPT-4 and custom prompt engineering.',
       tags: ['LLM', 'OpenAI', 'FastAPI'],
+      image: '',
       ctaLabel: 'View Project'
     },
     {
       title: 'Reinforcement Learning Pacman',
       description: 'Implemented Q-learning and Deep Q-Networks for autonomous Pacman agent achieving superhuman performance.',
       tags: ['Deep RL', 'PyTorch', 'Q-Learning'],
+      image: '',
       ctaLabel: 'View Project'
     },
     {
       title: 'Climate Data PCA Compression',
       description: 'Dimensionality reduction pipeline compressing global climate datasets by 80% while preserving 95% variance.',
       tags: ['PCA', 'NumPy', 'Data Compression'],
+      image: '',
       ctaLabel: 'View Project'
     },
     {
       title: 'AI Marketing Bot',
       description: 'Conversational AI chatbot for lead generation using NLP, sentiment analysis, and personalized response generation.',
       tags: ['NLP', 'BERT', 'Transformer'],
+      image: '',
       ctaLabel: 'View Project'
     },
     {
       title: 'Java Strategy Game',
       description: 'Turn-based strategy game with AI opponents using minimax algorithm and alpha-beta pruning for decision making.',
       tags: ['Java', 'Game Theory', 'Minimax'],
+      image: '',
       ctaLabel: 'View Project'
     }
   ],
