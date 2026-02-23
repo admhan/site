@@ -2,7 +2,7 @@
 // Ajouter/modifier du contenu ici met automatiquement à jour le rendu.
 export const homeData = {
   hero: {
-    name: 'Alexander Chen',
+    name: 'Adam Hannachi',
     subtitle: 'Data Scientist • AI Engineer • Database Architect',
     description:
       'Building intelligent systems that transform data into actionable insights. Specialized in machine learning, statistical modeling, and scalable data infrastructure.',
@@ -71,6 +71,6 @@ export const homeData = {
       { href: 'https://linkedin.com', label: 'LinkedIn', icon: 'linkedin' },
       { href: 'mailto:contact@example.com', label: 'Email', icon: 'email' }
     ],
-    copyright: '© 2026 Alexander Chen. All rights reserved.'
+    copyright: '© 2026 Adam Hannachi. All rights reserved.'
   }
 };
