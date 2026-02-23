@@ -32,7 +32,11 @@ function renderPortfolioPage() {
               (project, index) => `
                 <div class="project-card">
                   <div class="project-image">
-                    <span class="project-number">${projectNumber(index)}</span>
+                    ${
+                      project.image
+                        ? `<img class="project-img" src="${project.image}" alt="${project.title}" loading="lazy" />`
+                        : `<div class="project-placeholder" aria-hidden="true"><span class="project-number">${projectNumber(index)}</span></div>`
+                    }
                   </div>
                   <div class="project-content">
                     <h3 class="project-title">${project.title}</h3>

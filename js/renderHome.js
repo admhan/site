@@ -76,9 +76,12 @@ function renderHomePage() {
         </div>
         <div class="about-grid">
           <div class="about-image">
-            <div class="image-placeholder">
-              <div class="image-icon">${icons.code}</div>
-            </div>
+            <img
+              class="profile-img"
+              src="${homeData.about.image}"
+              alt="${homeData.hero.name}"
+              loading="lazy"
+            />
           </div>
           <div class="about-content">
             ${homeData.about.paragraphs.map((text) => `<p class="about-text">${text}</p>`).join('')}
