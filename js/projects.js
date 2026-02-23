@@ -9,7 +9,7 @@ export const projectsPageData = {
   },
   projects: [
     {
-      title: 'Metros Affluence Prediction',
+      title: 'Metro Affluence Prediction',
       description: 'Machine learning model predicting neighborhood affluence using transit data, demographic features, and geospatial analysis.',
       tags: ['Random Forest', 'XGBoost', 'Feature Engineering'],
       image: '',
