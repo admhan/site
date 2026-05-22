@@ -7,7 +7,7 @@ export const homeData = {
       name: 'Adam Hannachi',
       subtitle: 'Ingénieur ML & IA · Data Scientist · Master IASD, Paris-Dauphine PSL',
       description:
-        'Spécialisé en deep learning, NLP et IA générative, je conçois et déploie des systèmes d\'apprentissage automatique à fort impact — des modèles d\'uplift pour l\'optimisation CRM aux agents par renforcement et aux pipelines LLM. Diplômé en septembre 2026, disponible à partir d\'octobre 2026.',
+        'En fin de Master Intelligence Artificielle, Systèmes et Données (IASD) à l\'Université Paris-Dauphine PSL, je construis et déploie des systèmes de machine learning à partir de bases solides en statistiques, deep learning et ingénierie. Formation rigoureuse, expériences variées en alternance et en stage. Diplômé en septembre 2026, disponible à partir d\'octobre 2026.',
       cvButtonLabel: 'Télécharger le CV',
       cvButtonHref: 'CV Adam Hananachi CDI-Tech.pdf',
       portfolioCtaLabel: 'Voir les projets',
@@ -131,7 +131,7 @@ export const homeData = {
       name: 'Adam Hannachi',
       subtitle: 'ML & AI Engineer · Data Scientist · Master IASD — Paris-Dauphine PSL',
       description:
-        'Specializing in Deep Learning, NLP, and Generative AI. I build and deploy production-grade machine learning systems — from uplift models for CRM optimization to reinforcement learning agents and LLM-powered pipelines. Graduating September 2026, available from October 2026.',
+        'Final-year student in the Master of Artificial Intelligence, Systems and Data (IASD) at Université Paris-Dauphine PSL. Solid foundations in statistics, machine learning, and deep learning, combined with hands-on experience through internships and an apprenticeship. Graduating September 2026, available from October 2026.',
       cvButtonLabel: 'Download CV',
       cvButtonHref: 'CV Adam Hananachi CDI-Tech.pdf',
       portfolioCtaLabel: 'View Projects',
