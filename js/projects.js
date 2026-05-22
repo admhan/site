@@ -37,10 +37,10 @@ export const projectsPageData = {
       ctaHref: ''
     },
     {
-      title: 'Uplift Modeling for Marketing Optimization',
+      title: 'Master\'s Thesis — Uplift Modeling & CRM Targeting in E-commerce',
       description:
-        'End-to-end data science project at SÉZANE applying uplift modeling and causal inference techniques to optimize customer-targeting strategies. Covers problem framing, feature engineering, model training and evaluation, with NLP pipelines for sentiment analysis and topic modeling on customer feedback.',
-      tags: ['Uplift Modeling', 'Causal Inference', 'NLP', 'Scikit-learn', 'Python'],
+        'Research conducted during the Master IASD alternance at Sézane. Applies causal inference to estimate the incremental effect of CRM actions on purchasing behavior from purely observational data (no systematic control group). Covers the potential outcomes framework, meta-learners (S/T/X-Learner, R-Learner, DR-Learner), Causal Forests, Double Machine Learning, and propensity score adjustment. Evaluated with Qini curves, AUUC, and doubly-robust metrics using EconML and CausalML. Supervised by Paris-Dauphine PSL and Sézane. Work in progress — thesis defense September 2026.',
+      tags: ['Causal Inference', 'Uplift Modeling', 'DML', 'Causal Forests', 'EconML', 'CausalML'],
       image: '',
       ctaLabel: '',
       ctaHref: ''
