@@ -1,5 +1,7 @@
 import { homeData } from './homeData.js';
 
+let lang = localStorage.getItem('portfolio-lang') || 'fr';
+
 const icons = {
   code: `
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -41,29 +43,78 @@ const icons = {
   `
 };
 
+function injectLangStyles() {
+  if (document.getElementById('lang-toggle-style')) return;
+  const style = document.createElement('style');
+  style.id = 'lang-toggle-style';
+  style.textContent = `
+    .lang-switch {
+      position: fixed;
+      top: 1.5rem;
+      right: 2rem;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 0.2rem 0.35rem;
+      opacity: 0.38;
+      transition: opacity 0.2s;
+      color: inherit;
+    }
+    .lang-btn:hover { opacity: 0.7; }
+    .lang-active {
+      opacity: 1;
+      border-bottom: 1px solid currentColor;
+    }
+    .lang-sep {
+      opacity: 0.22;
+      font-size: 0.72rem;
+      pointer-events: none;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
 function renderHomePage() {
+  injectLangStyles();
+  const d = homeData[lang];
   const app = document.querySelector('#app');
   if (!app) return;
 
   app.innerHTML = `
+    <div class="lang-switch" aria-label="Language switcher">
+      <button class="lang-btn ${lang === 'fr' ? 'lang-active' : ''}" data-lang="fr">FR</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn ${lang === 'en' ? 'lang-active' : ''}" data-lang="en">EN</button>
+    </div>
+
     <section class="hero">
       <div class="hero-bg-accent"></div>
       <div class="hero-bg-accent-2"></div>
       <div class="container hero-content">
         <div class="hero-line"></div>
-        <h1 class="hero-title">${homeData.hero.name}</h1>
-        <p class="hero-subtitle">${homeData.hero.subtitle}</p>
-        <p class="hero-description">${homeData.hero.description}</p>
+        <h1 class="hero-title">${d.hero.name}</h1>
+        <p class="hero-subtitle">${d.hero.subtitle}</p>
+        <p class="hero-description">${d.hero.description}</p>
         <div class="hero-buttons">
-          <a id="cv-button" href="${homeData.hero.cvButtonHref}" download class="btn btn-primary">
+          <a href="${d.hero.cvButtonHref}" download class="btn btn-primary">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            ${homeData.hero.cvButtonLabel}
+            ${d.hero.cvButtonLabel}
           </a>
-          <a href="${homeData.hero.portfolioCtaHref}" class="btn btn-outline">${homeData.hero.portfolioCtaLabel}</a>
+          <a href="${d.hero.portfolioCtaHref}" class="btn btn-outline">${d.hero.portfolioCtaLabel}</a>
         </div>
       </div>
     </section>
@@ -71,20 +122,15 @@ function renderHomePage() {
     <section class="section section-white">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">${homeData.about.title}</h2>
+          <h2 class="section-title">${d.about.title}</h2>
           <div class="section-line"></div>
         </div>
         <div class="about-grid">
           <div class="about-image">
-            <img
-              class="profile-img"
-              src="${homeData.about.image}"
-              alt="${homeData.hero.name}"
-              loading="lazy"
-            />
+            <img class="profile-img" src="${d.about.image}" alt="${d.hero.name}" loading="lazy" />
           </div>
           <div class="about-content">
-            ${homeData.about.paragraphs.map((text) => `<p class="about-text">${text}</p>`).join('')}
+            ${d.about.paragraphs.map((text) => `<p class="about-text">${text}</p>`).join('')}
           </div>
         </div>
       </div>
@@ -93,23 +139,19 @@ function renderHomePage() {
     <section class="section section-cream">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">${homeData.expertise.title}</h2>
+          <h2 class="section-title">${d.expertise.title}</h2>
           <div class="section-line"></div>
         </div>
         <div class="skills-grid">
-          ${homeData.expertise.items
-            .map(
-              (item) => `
-                <div class="skill-card">
-                  <div class="skill-icon">${icons[item.icon] ?? icons.code}</div>
-                  <h3 class="skill-title">${item.title}</h3>
-                  <ul class="skill-list">
-                    ${item.skills.map((skill) => `<li>${skill}</li>`).join('')}
-                  </ul>
-                </div>
-              `
-            )
-            .join('')}
+          ${d.expertise.items.map((item) => `
+            <div class="skill-card">
+              <div class="skill-icon">${icons[item.icon] ?? icons.code}</div>
+              <h3 class="skill-title">${item.title}</h3>
+              <ul class="skill-list">
+                ${item.skills.map((skill) => `<li>${skill}</li>`).join('')}
+              </ul>
+            </div>
+          `).join('')}
         </div>
       </div>
     </section>
@@ -117,23 +159,19 @@ function renderHomePage() {
     <section class="section section-white">
       <div class="container-small">
         <div class="section-header">
-          <h2 class="section-title">${homeData.experience.title}</h2>
+          <h2 class="section-title">${d.experience.title}</h2>
           <div class="section-line"></div>
         </div>
         <div class="timeline">
-          ${homeData.experience.timeline
-            .map(
-              (item) => `
-                <div class="timeline-item">
-                  <div class="timeline-dot"></div>
-                  <p class="timeline-date">${item.date}</p>
-                  <h3 class="timeline-title">${item.role}</h3>
-                  <p class="timeline-company">${item.company}</p>
-                  <p class="timeline-description">${item.description}</p>
-                </div>
-              `
-            )
-            .join('')}
+          ${d.experience.timeline.map((item) => `
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <p class="timeline-date">${item.date}</p>
+              <h3 class="timeline-title">${item.role}</h3>
+              <p class="timeline-company">${item.company}</p>
+              <p class="timeline-description">${item.description}</p>
+            </div>
+          `).join('')}
         </div>
       </div>
     </section>
@@ -141,23 +179,19 @@ function renderHomePage() {
     <section class="section section-cream">
       <div class="container-small">
         <div class="section-header">
-          <h2 class="section-title">${homeData.education.title}</h2>
+          <h2 class="section-title">${d.education.title}</h2>
           <div class="section-line"></div>
         </div>
         <div class="timeline">
-          ${homeData.education.timeline
-            .map(
-              (item) => `
-                <div class="timeline-item">
-                  <div class="timeline-dot"></div>
-                  <p class="timeline-date">${item.date}</p>
-                  <h3 class="timeline-title">${item.degree}</h3>
-                  <p class="timeline-company">${item.institution}</p>
-                  <p class="timeline-description">${item.description}</p>
-                </div>
-              `
-            )
-            .join('')}
+          ${d.education.timeline.map((item) => `
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <p class="timeline-date">${item.date}</p>
+              <h3 class="timeline-title">${item.degree}</h3>
+              <p class="timeline-company">${item.institution}</p>
+              <p class="timeline-description">${item.description}</p>
+            </div>
+          `).join('')}
         </div>
       </div>
     </section>
@@ -166,21 +200,25 @@ function renderHomePage() {
       <div class="container">
         <div class="footer-content">
           <div class="social-links">
-            ${homeData.footer.socialLinks
-              .map(
-                (link) => `
-                  <a href="${link.href}" ${link.href.startsWith('http') ? 'target="_blank" rel="noopener noreferrer"' : ''} class="social-link" aria-label="${link.label}">
-                    ${icons[link.icon] ?? ''}
-                  </a>
-                `
-              )
-              .join('')}
+            ${d.footer.socialLinks.map((link) => `
+              <a href="${link.href}" ${link.href.startsWith('http') ? 'target="_blank" rel="noopener noreferrer"' : ''} class="social-link" aria-label="${link.label}">
+                ${icons[link.icon] ?? ''}
+              </a>
+            `).join('')}
           </div>
-          <p class="footer-text">${homeData.footer.copyright}</p>
+          <p class="footer-text">${d.footer.copyright}</p>
         </div>
       </div>
     </footer>
   `;
+
+  document.querySelectorAll('.lang-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      lang = btn.dataset.lang;
+      localStorage.setItem('portfolio-lang', lang);
+      renderHomePage();
+    });
+  });
 }
 
 document.addEventListener('DOMContentLoaded', renderHomePage);
