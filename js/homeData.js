@@ -3,40 +3,88 @@
 export const homeData = {
   hero: {
     name: 'Adam Hannachi',
-    subtitle: 'Data Scientist • AI Engineer • Database Architect',
+    subtitle: 'ML & AI Engineer • Data Scientist • Master IASD — Paris-Dauphine PSL',
     description:
-      'Building intelligent systems that transform data into actionable insights. Specialized in machine learning, statistical modeling, and scalable data infrastructure.',
+      'Specializing in Deep Learning, NLP, and Generative AI. I design and deploy production-grade machine learning systems — from uplift models for marketing optimization to reinforcement learning agents and LLM-powered pipelines. Graduating September 2026, available for full-time positions from October 2026.',
     cvButtonLabel: 'Download CV',
-    cvButtonActionMessage: 'CV download would be triggered here',
-    portfolioCtaLabel: 'View Portfolio',
+    cvButtonHref: 'CV Adam Hananachi CDI-Tech.pdf',
+    portfolioCtaLabel: 'View Projects',
     portfolioCtaHref: 'portfolio.html'
   },
   about: {
     title: 'About',
     image: 'photos/adhannachi.JPG',
     paragraphs: [
-      "I'm a passionate Data Scientist and AI Engineer with expertise in building end-to-end machine learning systems. My work spans from exploratory data analysis to deploying production-grade models that drive business decisions.",
-      'With a strong foundation in statistics, computer science, and software engineering, I bridge the gap between theoretical models and practical applications. I specialize in creating scalable data pipelines, implementing advanced ML algorithms, and designing database architectures that support high-performance analytics.',
-      "When I'm not training models or optimizing queries, I contribute to open-source projects and explore cutting-edge research in reinforcement learning and natural language processing."
+      "I'm a Machine Learning & AI Engineer completing a Master's in Artificial Intelligence, Systems and Data (IASD) at Université Paris-Dauphine PSL — a selective program co-accredited with ENS and Mines Paris. My academic path started with a Classe Préparatoire (Maths & Physics) at Lycée Paul Éluard, continued through an engineering track at Université Paris-Saclay, then pivoted into a full AI specialization at Dauphine.",
+      "My work bridges research depth and engineering rigor. I have built uplift models for customer-targeting decisions at SÉZANE, designed MCP-based AI tooling for enterprise adoption at House of Communication, and developed LLM-powered CV parsing and semantic matching systems at SPIDR. I am equally at home implementing distributed graph algorithms on Apache Spark or fine-tuning language models for domain-specific tasks.",
+      "I am particularly drawn to problems that sit at the intersection of statistical modeling and production engineering — whether that means training a deep RL agent pixel-by-pixel, architecting a RAG pipeline, or extracting causal signals from observational data."
     ]
   },
   expertise: {
     title: 'Expertise',
     items: [
       {
-        title: 'Programming',
-        icon: 'code',
-        skills: ['Python (Expert)', 'C/C++ (Advanced)', 'Java (Advanced)', 'R (Proficient)']
-      },
-      {
-        title: 'Machine Learning',
+        title: 'Deep Learning & Generative AI',
         icon: 'ml',
-        skills: ['Classification & Regression', 'Deep Learning (CNNs, RNNs)', 'PCA & Dimensionality Reduction', 'Reinforcement Learning']
+        skills: [
+          'Neural Networks: MLP, CNN, RNN',
+          'LLM Fine-tuning & RAG',
+          'Reinforcement Learning: DQN, PPO',
+          'Prompt Engineering · LangChain · OpenAI API'
+        ]
       },
       {
-        title: 'Data & Tools',
+        title: 'Machine Learning & NLP',
+        icon: 'code',
+        skills: [
+          'Classification · Regression · Clustering',
+          'Uplift Modeling & Causal Inference',
+          'BERT · Word2Vec · HuggingFace Transformers',
+          'Feature Engineering & Model Optimization'
+        ]
+      },
+      {
+        title: 'Engineering & Data Stack',
         icon: 'data',
-        skills: ['SQL & NoSQL Databases', 'Pandas, NumPy, Scikit-learn', 'TensorFlow, PyTorch', 'Matplotlib, Seaborn, Plotly']
+        skills: [
+          'Python · PyTorch · Scikit-learn',
+          'FastAPI · Apache Spark · Docker',
+          'PostgreSQL · MongoDB · MySQL',
+          'Pandas · NumPy · Matplotlib · Seaborn'
+        ]
+      }
+    ]
+  },
+  education: {
+    title: 'Education',
+    timeline: [
+      {
+        date: '2024 – 2026',
+        degree: 'Master — Intelligence Artificielle, Systèmes et Données (IASD)',
+        institution: 'Université Paris-Dauphine PSL · ENS · Mines Paris',
+        description:
+          'Selective research-oriented Master (48 ECTS, co-accredited with ENS and Mines Paris). Core courses: Foundations of ML, Optimization for ML, Large Language Models, Deep Learning for Image Analysis, Reinforcement Learning, Data Science Lab, Data Acquisition & Storage. Electives include Causal Inference, Graph Analytics, Monte Carlo Search & Games, Knowledge Graphs, and ML on Big Data. Mandatory 5-month research or industry thesis (Apr–Sep 2026).'
+      },
+      {
+        date: '2023 – 2024',
+        degree: 'Licence — Informatique, Mathématiques pour la décision et les données',
+        institution: 'Université Paris-Dauphine',
+        description:
+          'Strong foundation in algorithms, probability, statistics, database systems, and mathematical optimization for data-driven decision making.'
+      },
+      {
+        date: '2022 – 2023',
+        degree: 'Cycle Ingénieur — Électronique et Systèmes Robotisés',
+        institution: 'Université Paris-Saclay',
+        description:
+          'Engineering curriculum focused on embedded systems, signal processing, electronics, and robotics fundamentals.'
+      },
+      {
+        date: '2020 – 2022',
+        degree: 'Classe Préparatoire — Mathématiques & Physique-Chimie',
+        institution: 'Lycée Paul Éluard · Saint-Denis',
+        description:
+          'Intensive two-year preparation for competitive engineering school entrance exams. Rigorous training in analysis, algebra, mechanics, and thermodynamics.'
       }
     ]
   },
@@ -44,33 +92,33 @@ export const homeData = {
     title: 'Experience',
     timeline: [
       {
-        date: '2022 - Present',
-        role: 'Senior Data Scientist',
-        company: 'TechCorp AI Solutions',
+        date: '2025 – Present',
+        role: 'Data Scientist / Data Analyst — Alternance',
+        company: 'SÉZANE · Paris',
         description:
-          'Leading a team of data scientists in developing ML-powered recommendation systems. Built end-to-end pipelines processing 10M+ daily transactions, improving prediction accuracy by 35%.'
+          'Developing uplift models to optimize marketing strategies and customer-targeting decisions. Building end-to-end data projects — from problem framing and feature engineering to model evaluation and deployment. Setting up NLP pipelines for sentiment analysis and topic modeling. Producing actionable data reports and working closely with business teams to translate analytical insights into concrete decisions.'
       },
       {
-        date: '2020 - 2022',
-        role: 'Machine Learning Engineer',
-        company: 'DataFlow Analytics',
+        date: 'May – Aug 2025',
+        role: 'AI Developer & Tester — Stage',
+        company: 'IA Squad (House of Communication) · Neuilly-sur-Seine',
         description:
-          'Developed and deployed production ML models for fraud detection and customer churn prediction. Implemented A/B testing frameworks and automated model retraining pipelines.'
+          'Contributed to accelerating AI adoption across a major European communications group. Evaluated and benchmarked AI tools for internal business use cases. Developed AI agents, chatbots, and automation workflows tailored to business needs. Contributed to the development of an internal GPT via MCP tool design, and architected a reusable MCP Tools library to standardize and streamline AI solution integration across teams.'
       },
       {
-        date: '2018 - 2020',
-        role: 'Data Analyst',
-        company: 'Insight Ventures',
+        date: 'May – Aug 2024',
+        role: 'ML Developer — Stage',
+        company: 'SPIDR · Argenteuil',
         description:
-          'Conducted exploratory data analysis and built interactive dashboards for business intelligence. Automated reporting workflows reducing manual effort by 60%.'
+          'Built a FastAPI-based CV parsing system converting PDF resumes to structured JSON using LLM prompt engineering (Llama, GPT-4). Contributed to an AI agent for automated CV management. Designed a BERT-powered semantic matching engine to score CV–job offer compatibility, backed by a custom database of candidate profiles and job postings.'
       }
     ]
   },
   footer: {
     socialLinks: [
-      { href: 'https://github.com', label: 'GitHub', icon: 'github' },
-      { href: 'https://linkedin.com', label: 'LinkedIn', icon: 'linkedin' },
-      { href: 'mailto:contact@example.com', label: 'Email', icon: 'email' }
+      { href: 'https://github.com/admhan', label: 'GitHub', icon: 'github' },
+      { href: 'https://www.linkedin.com/in/adam-hannachi-43225a242/', label: 'LinkedIn', icon: 'linkedin' },
+      { href: 'mailto:adam.hannachi@dauphine.eu', label: 'Email', icon: 'email' }
     ],
     copyright: '© 2026 Adam Hannachi. All rights reserved.'
   }

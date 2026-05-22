@@ -4,6 +4,20 @@ function projectNumber(index) {
   return String(index + 1).padStart(2, '0');
 }
 
+function renderProjectCta(project) {
+  if (!project.ctaHref) return '';
+  return `
+    <a href="${project.ctaHref}" target="_blank" rel="noopener noreferrer" class="btn-project">
+      ${project.ctaLabel}
+      <svg class="icon-tiny" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+        <polyline points="15 3 21 3 21 9"></polyline>
+        <line x1="10" y1="14" x2="21" y2="3"></line>
+      </svg>
+    </a>
+  `;
+}
+
 function renderPortfolioPage() {
   const app = document.querySelector('#app');
   if (!app) return;
@@ -44,14 +58,7 @@ function renderPortfolioPage() {
                     <div class="project-tags">
                       ${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}
                     </div>
-                    <button class="btn-project">
-                      ${project.ctaLabel}
-                      <svg class="icon-tiny" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg>
-                    </button>
+                    ${renderProjectCta(project)}
                   </div>
                 </div>
               `
@@ -95,14 +102,16 @@ function renderPortfolioPage() {
                 ${projectsPageData.featured.techTags.map((tag) => `<span class="tech-tag">${tag}</span>`).join('')}
               </div>
             </div>
-            <button class="btn btn-primary">
-              ${projectsPageData.featured.ctaLabel}
-              <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </button>
+            ${projectsPageData.featured.ctaHref ? `
+              <a href="${projectsPageData.featured.ctaHref}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                ${projectsPageData.featured.ctaLabel}
+                <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            ` : ''}
           </div>
         </div>
       </div>

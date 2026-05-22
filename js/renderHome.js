@@ -30,7 +30,7 @@ const icons = {
   `,
   linkedin: `
     <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 23.2 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
     </svg>
   `,
   email: `
@@ -55,14 +55,14 @@ function renderHomePage() {
         <p class="hero-subtitle">${homeData.hero.subtitle}</p>
         <p class="hero-description">${homeData.hero.description}</p>
         <div class="hero-buttons">
-          <button id="cv-button" class="btn btn-primary">
+          <a id="cv-button" href="${homeData.hero.cvButtonHref}" download class="btn btn-primary">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
             ${homeData.hero.cvButtonLabel}
-          </button>
+          </a>
           <a href="${homeData.hero.portfolioCtaHref}" class="btn btn-outline">${homeData.hero.portfolioCtaLabel}</a>
         </div>
       </div>
@@ -138,6 +138,30 @@ function renderHomePage() {
       </div>
     </section>
 
+    <section class="section section-cream">
+      <div class="container-small">
+        <div class="section-header">
+          <h2 class="section-title">${homeData.education.title}</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          ${homeData.education.timeline
+            .map(
+              (item) => `
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <p class="timeline-date">${item.date}</p>
+                  <h3 class="timeline-title">${item.degree}</h3>
+                  <p class="timeline-company">${item.institution}</p>
+                  <p class="timeline-description">${item.description}</p>
+                </div>
+              `
+            )
+            .join('')}
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -157,11 +181,6 @@ function renderHomePage() {
       </div>
     </footer>
   `;
-
-  const cvButton = document.querySelector('#cv-button');
-  cvButton?.addEventListener('click', () => {
-    window.alert(homeData.hero.cvButtonActionMessage);
-  });
 }
 
 document.addEventListener('DOMContentLoaded', renderHomePage);
