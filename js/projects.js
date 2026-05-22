@@ -11,7 +11,7 @@ export const projectsPageData = {
     },
     projects: [
       {
-        title: 'Réseaux de Neurones pour le Go — Défi Architecture Contrainte',
+        title: 'Réseaux de Neurones pour le Go : Défi Architecture Contrainte',
         description:
           'Projet de cours du Master IASD (Deep Learning) réalisé en binôme : conception de réseaux de neurones compacts, limités à 100 000 paramètres, pour jouer au Go. Les modèles s\'affrontent dans un tournoi interne. Expérimentation avec des architectures ResNet et des modèles hybrides à mécanismes d\'attention pour maximiser la force de jeu sous contrainte de taille, dans un esprit AlphaGo.',
         tags: ['PyTorch', 'ResNet', 'Mécanisme d\'attention', 'IA de jeux', 'Architecture neuronale'],
@@ -20,7 +20,7 @@ export const projectsPageData = {
         ctaHref: 'https://github.com/admhan/DeepLearning_GO'
       },
       {
-        title: 'Composantes Connexes à Grande Échelle — Apache Spark',
+        title: 'Composantes Connexes à Grande Échelle : Apache Spark',
         description:
           'Implémentation et étude de scalabilité de l\'algorithme CCF (Connected Component Finder) avec l\'API RDD d\'Apache Spark, d\'après l\'article "Fast and Scalable Connected Component Computation in MapReduce". Comparaison d\'une version de base et d\'une version optimisée par mise en cache sur des graphes de taille variable.',
         tags: ['Apache Spark', 'PySpark', 'Algorithmes de Graphes', 'Big Data', 'RDD'],
@@ -38,7 +38,7 @@ export const projectsPageData = {
         ctaHref: ''
       },
       {
-        title: 'Mémoire de Master — Uplift Modeling & Ciblage CRM en E-commerce',
+        title: 'Mémoire de Master : Uplift Modeling & Ciblage CRM en E-commerce',
         description:
           'Recherche menée en alternance chez Sézane dans le cadre du Master IASD. Estimation de l\'effet causal des actions CRM sur le comportement d\'achat à partir de données purement observationnelles, sans groupe de contrôle. Cadre : résultats potentiels, méta-learners (S/T/X-Learner, R-Learner, DR-Learner), forêts causales, Double Machine Learning, score de propension. Évaluation avec EconML et CausalML. Soutenance prévue en septembre 2026.',
         tags: ['Inférence Causale', 'Uplift Modeling', 'Double ML', 'Forêts Causales', 'EconML', 'CausalML'],
@@ -47,7 +47,7 @@ export const projectsPageData = {
         ctaHref: ''
       },
       {
-        title: 'Deep Learning pour l\'Analyse d\'Images — Travaux Pratiques',
+        title: 'Deep Learning pour l\'Analyse d\'Images : Travaux Pratiques',
         description:
           'Sept séances de travaux pratiques pour le cours "Deep Learning for Image Analysis" du Master IASD : architectures CNN, transfer learning (ResNet, VGG), Vision Transformers (ViT) et auto-encodeurs. Implémentation, benchmarking et analyse comparative sur des tâches de classification et de segmentation d\'images.',
         tags: ['CNN', 'Transfer Learning', 'Vision Transformer', 'PyTorch', 'Vision par Ordinateur'],
@@ -56,7 +56,7 @@ export const projectsPageData = {
         ctaHref: 'https://github.com/admhan/Deep-Learning-For-Image-Analysis-Lab'
       },
       {
-        title: 'Base de Données Graphe sur la Coupe du Monde — Neo4j',
+        title: 'Base de Données Graphe sur la Coupe du Monde : Neo4j',
         description:
           'Modélisation de la Coupe du Monde FIFA sous forme de graphe de connaissance Neo4j. Les entités (éditions, matchs, équipes, joueurs) sont reliées par des relations interrogeables en Cypher. Exploration des patterns analytiques propres aux bases de données graphes sur données historiques réelles.',
         tags: ['Neo4j', 'Base de Données Graphe', 'Cypher', 'Modélisation de Données'],
@@ -68,7 +68,7 @@ export const projectsPageData = {
     featured: {
       sectionTitle: 'Projet Mis en Avant',
       number: '01',
-      title: 'Agent d\'Apprentissage par Renforcement — CarRacing',
+      title: 'Agent d\'Apprentissage par Renforcement : CarRacing',
       description:
         'Projet de cours (Apprentissage par Renforcement, Master IASD). Une suite RL modulaire pour l\'environnement CarRacing-v3 de Gymnasium, couvrant cinq algorithmes, une architecture propre et une reproductibilité complète.',
       longDescription:
@@ -105,7 +105,7 @@ export const projectsPageData = {
     },
     projects: [
       {
-        title: 'Go-Playing Neural Networks — Constrained Architecture Challenge',
+        title: 'Go-Playing Neural Networks : Constrained Architecture Challenge',
         description:
           'Master IASD course project (Deep Learning), done in pair: designing compact neural networks (at most 100k parameters) to play the game of Go. Models compete against each other in a tournament. Experiments with ResNet encoders and attention-hybrid architectures to maximize board evaluation strength under a strict parameter budget, inspired by AlphaGo.',
         tags: ['PyTorch', 'ResNet', 'Attention Hybrid', 'Game AI', 'Neural Architecture'],
@@ -114,7 +114,7 @@ export const projectsPageData = {
         ctaHref: 'https://github.com/admhan/DeepLearning_GO'
       },
       {
-        title: 'Connected Components at Scale — Apache Spark',
+        title: 'Connected Components at Scale : Apache Spark',
         description:
           'Implementation and scalability evaluation of the Connected Component Finder (CCF) algorithm using Apache Spark RDD API, based on the paper "Fast and Scalable Connected Component Computation in MapReduce". Comparative study of a basic vs. cache-optimized variant across small, medium, and large graph datasets.',
         tags: ['Apache Spark', 'PySpark', 'Graph Algorithms', 'Big Data', 'RDD'],
@@ -132,7 +132,7 @@ export const projectsPageData = {
         ctaHref: ''
       },
       {
-        title: 'Master\'s Thesis — Uplift Modeling & CRM Targeting in E-commerce',
+        title: 'Master\'s Thesis : Uplift Modeling & CRM Targeting in E-commerce',
         description:
           'Research conducted during the Master IASD alternance at Sézane. Applies causal inference to estimate the incremental effect of CRM actions on purchasing behavior from purely observational data, without a systematic control group. Covers meta-learners (S/T/X-Learner, R-Learner, DR-Learner), Causal Forests, Double Machine Learning, and propensity score adjustment. Evaluated with EconML and CausalML. Thesis defense September 2026.',
         tags: ['Causal Inference', 'Uplift Modeling', 'DML', 'Causal Forests', 'EconML', 'CausalML'],
@@ -141,7 +141,7 @@ export const projectsPageData = {
         ctaHref: ''
       },
       {
-        title: 'Deep Learning for Image Analysis — Lab Series',
+        title: 'Deep Learning for Image Analysis : Lab Series',
         description:
           'Seven practical sessions for the "Deep Learning for Image Analysis" course at Dauphine Master IASD: CNN architectures, transfer learning (ResNet, VGG), Vision Transformers (ViT), and auto-encoders. Implementation, benchmarking, and comparative analysis across image classification and segmentation tasks.',
         tags: ['CNN', 'Transfer Learning', 'Vision Transformer', 'PyTorch', 'Computer Vision'],
@@ -150,7 +150,7 @@ export const projectsPageData = {
         ctaHref: 'https://github.com/admhan/Deep-Learning-For-Image-Analysis-Lab'
       },
       {
-        title: 'World Cup Knowledge Graph — Neo4j',
+        title: 'World Cup Knowledge Graph : Neo4j',
         description:
           'Graph database project modeling the FIFA World Cup as a Neo4j knowledge graph. Entities (tournaments, matches, teams, players) are connected by directly queryable relationships in Cypher. Explores graph-native analytical patterns on real historical datasets.',
         tags: ['Neo4j', 'Graph Database', 'Cypher', 'Data Modeling'],

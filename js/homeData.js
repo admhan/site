@@ -5,7 +5,7 @@ export const homeData = {
   fr: {
     hero: {
       name: 'Adam Hannachi',
-      subtitle: 'Ingénieur ML & IA · Data Scientist · Master IASD, Paris-Dauphine PSL',
+      subtitle: 'Ingénieur Intelligence Artificielle · Data Science · Machine Learning · Master IASD, Paris-Dauphine PSL',
       description:
         'En fin de Master Intelligence Artificielle, Systèmes et Données (IASD) à l\'Université Paris-Dauphine PSL, je construis et déploie des systèmes de machine learning à partir de bases solides en statistiques, deep learning et ingénierie. Formation rigoureuse, expériences variées en alternance et en stage. Diplômé en septembre 2026, disponible à partir d\'octobre 2026.',
       cvButtonLabel: 'Télécharger le CV',
@@ -62,28 +62,28 @@ export const homeData = {
       timeline: [
         {
           date: '2024 – 2026',
-          degree: 'Master — Intelligence Artificielle, Systèmes et Données (IASD)',
+          degree: 'Master Intelligence Artificielle, Systèmes et Données (IASD)',
           institution: 'Université Paris-Dauphine PSL · ENS · Mines Paris',
           description:
             'Master sélectif orienté recherche (48 ECTS). Cours fondamentaux : Fondements du ML, Optimisation pour le ML, Modèles de Langage, Deep Learning pour l\'Analyse d\'Images, Apprentissage par Renforcement, Data Science Lab, Acquisition et Stockage des Données. Cours au choix : Inférence Causale, Graphes et Analytique, Monte Carlo Search & Jeux, Graphes de Connaissance. Stage de recherche ou industriel obligatoire (avr.–sept. 2026).'
         },
         {
           date: '2023 – 2024',
-          degree: 'Licence — Informatique, Mathématiques pour la décision et les données',
+          degree: 'Licence Informatique, Mathématiques pour la décision et les données',
           institution: 'Université Paris-Dauphine',
           description:
             'Fondements en algorithmique, probabilités, statistiques, bases de données et optimisation mathématique pour la prise de décision fondée sur les données.'
         },
         {
           date: '2022 – 2023',
-          degree: 'Cycle Ingénieur — Électronique et Systèmes Robotisés',
+          degree: 'Cycle Ingénieur, Électronique et Systèmes Robotisés',
           institution: 'Université Paris-Saclay',
           description:
             'Cursus ingénieur axé sur les systèmes embarqués, le traitement du signal, l\'électronique et les fondements de la robotique.'
         },
         {
           date: '2020 – 2022',
-          degree: 'Classe Préparatoire — Mathématiques & Physique-Chimie',
+          degree: 'Classe Préparatoire Mathématiques & Physique-Chimie',
           institution: 'Lycée Paul Éluard · Saint-Denis',
           description:
             'Préparation intensive aux concours des grandes écoles d\'ingénieurs. Formation rigoureuse en analyse, algèbre, mécanique et thermodynamique.'
@@ -95,21 +95,21 @@ export const homeData = {
       timeline: [
         {
           date: '2025 – présent',
-          role: 'Data Scientist & Data Analyst — Alternance',
+          role: 'Data Scientist & Data Analyst, Alternance',
           company: 'SÉZANE · Paris',
           description:
             'Projet principal : estimation de l\'effet causal des actions CRM sur le comportement d\'achat à partir de données purement observationnelles, sujet du mémoire de Master. Conception de projets data de bout en bout, pipelines NLP pour l\'analyse de sentiment et le topic modeling, et production de rapports analytiques en lien direct avec les équipes métier.'
         },
         {
           date: 'Mai – août 2025',
-          role: 'Développeur & Testeur d\'IA — Stage',
+          role: 'Développeur & Testeur d\'IA, Stage',
           company: 'IA Squad (House of Communication) · Neuilly-sur-Seine',
           description:
             'Participation à l\'accélération de l\'adoption de l\'IA au sein d\'un grand groupe de communication. Évaluation et benchmarking d\'outils d\'IA, développement d\'agents et de chatbots adaptés aux besoins internes, contribution au développement d\'un GPT interne via la conception d\'outils MCP. Mise en place d\'une bibliothèque de MCP Tools pour standardiser l\'intégration des solutions IA.'
         },
         {
           date: 'Mai – août 2024',
-          role: 'Développeur ML — Stage',
+          role: 'Développeur ML, Stage',
           company: 'SPIDR · Argenteuil',
           description:
             'Développement d\'un système de parsing de CVs par LLM (FastAPI, Llama, GPT-4) convertissant des PDFs en JSON structuré. Contribution à un agent IA pour l\'automatisation du traitement des CVs. Conception d\'un moteur de matching sémantique CV/offres basé sur BERT, avec base de données de profils et d\'offres d\'emploi.'
@@ -129,7 +129,7 @@ export const homeData = {
   en: {
     hero: {
       name: 'Adam Hannachi',
-      subtitle: 'ML & AI Engineer · Data Scientist · Master IASD — Paris-Dauphine PSL',
+      subtitle: 'Artificial Intelligence Engineer · Data Scientist · Machine Learning · Master IASD, Paris-Dauphine PSL',
       description:
         'Final-year student in the Master of Artificial Intelligence, Systems and Data (IASD) at Université Paris-Dauphine PSL. Solid foundations in statistics, machine learning, and deep learning, combined with hands-on experience through internships and an apprenticeship. Graduating September 2026, available from October 2026.',
       cvButtonLabel: 'Download CV',
@@ -141,9 +141,9 @@ export const homeData = {
       title: 'About',
       image: 'photos/adhannachi.JPG',
       paragraphs: [
-        'I\'m a Machine Learning & AI Engineer completing a Master\'s in Artificial Intelligence, Systems and Data (IASD) at Université Paris-Dauphine PSL — a selective program co-accredited with ENS and Mines Paris. My academic path started with a Classe Préparatoire (Maths & Physics) at Lycée Paul Éluard, continued through an engineering track at Université Paris-Saclay, then pivoted into a full AI specialization at Dauphine.',
-        'My work bridges research depth and engineering rigor. At Sézane, I worked on estimating the causal effect of CRM actions from purely observational data — the core subject of my Master\'s thesis. At House of Communication, I designed AI agents and MCP tooling to accelerate AI adoption at scale. At SPIDR, I built an LLM-powered CV parsing system and a BERT-based semantic matching engine.',
-        'I am particularly drawn to problems that sit at the intersection of statistical modeling and production engineering — whether that means training a deep RL agent pixel by pixel, architecting a RAG pipeline, or extracting causal signals from observational data without a control group.'
+        'I\'m an Artificial Intelligence and Data Science engineer completing a Master\'s in Artificial Intelligence, Systems and Data (IASD) at Université Paris-Dauphine PSL, a selective program co-accredited with ENS and Mines Paris. My academic path started with a Classe Préparatoire (Maths & Physics) at Lycée Paul Éluard, continued through an engineering track at Université Paris-Saclay, then pivoted into a full AI specialization at Dauphine.',
+        'My work bridges research depth and engineering rigor. At Sézane, I worked on estimating the causal effect of CRM actions from purely observational data, the core subject of my Master\'s thesis. At House of Communication, I designed AI agents and MCP tooling to accelerate AI adoption at scale. At SPIDR, I built an LLM-powered CV parsing system and a BERT-based semantic matching engine.',
+        'I am particularly drawn to problems that sit at the intersection of statistical modeling and production engineering, whether that means training a deep RL agent pixel by pixel, architecting a RAG pipeline, or extracting causal signals from observational data without a control group.'
       ]
     },
     expertise: {
@@ -186,28 +186,28 @@ export const homeData = {
       timeline: [
         {
           date: '2024 – 2026',
-          degree: 'Master — Artificial Intelligence, Systems and Data (IASD)',
+          degree: 'Master in Artificial Intelligence, Systems and Data (IASD)',
           institution: 'Université Paris-Dauphine PSL · ENS · Mines Paris',
           description:
             'Selective research-oriented Master (48 ECTS). Core courses: Foundations of ML, Optimization for ML, Large Language Models, Deep Learning for Image Analysis, Reinforcement Learning, Data Science Lab, Data Acquisition & Storage. Electives include Causal Inference, Graph Analytics, Monte Carlo Search & Games, Knowledge Graphs. Mandatory 5-month research or industry thesis (Apr–Sep 2026).'
         },
         {
           date: '2023 – 2024',
-          degree: 'Bachelor — Computer Science, Mathematics for Decision and Data',
+          degree: 'Bachelor in Computer Science, Mathematics for Decision and Data',
           institution: 'Université Paris-Dauphine',
           description:
             'Foundation in algorithms, probability, statistics, database systems, and mathematical optimization for data-driven decision making.'
         },
         {
           date: '2022 – 2023',
-          degree: 'Engineering Track — Electronics and Robotics Systems',
+          degree: 'Engineering Track, Electronics and Robotics Systems',
           institution: 'Université Paris-Saclay',
           description:
             'Engineering curriculum focused on embedded systems, signal processing, electronics, and robotics fundamentals.'
         },
         {
           date: '2020 – 2022',
-          degree: 'Classe Préparatoire — Mathematics & Physics-Chemistry',
+          degree: 'Classe Préparatoire, Mathematics & Physics-Chemistry',
           institution: 'Lycée Paul Éluard · Saint-Denis',
           description:
             'Intensive two-year preparation for competitive engineering school entrance exams. Rigorous training in analysis, algebra, mechanics, and thermodynamics.'
@@ -219,21 +219,21 @@ export const homeData = {
       timeline: [
         {
           date: '2025 – Present',
-          role: 'Data Scientist / Data Analyst — Alternance',
+          role: 'Data Scientist / Data Analyst, Alternance',
           company: 'SÉZANE · Paris',
           description:
-            'Main project: estimating the causal effect of CRM actions on purchasing behavior from purely observational data — the core subject of my Master\'s thesis. Building end-to-end data projects, NLP pipelines for sentiment analysis and topic modeling, and producing actionable analytical reports in close collaboration with business teams.'
+            'Main project: estimating the causal effect of CRM actions on purchasing behavior from purely observational data, the core subject of my Master\'s thesis. Building end-to-end data projects, NLP pipelines for sentiment analysis and topic modeling, and producing actionable analytical reports in close collaboration with business teams.'
         },
         {
           date: 'May – Aug 2025',
-          role: 'AI Developer & Tester — Internship',
+          role: 'AI Developer & Tester, Internship',
           company: 'IA Squad (House of Communication) · Neuilly-sur-Seine',
           description:
             'Contributed to accelerating AI adoption across a major European communications group. Evaluated and benchmarked AI tools, developed agents and chatbots tailored to internal business needs, and contributed to an internal GPT via MCP tool design. Architected a reusable MCP Tools library to standardize AI solution integration across teams.'
         },
         {
           date: 'May – Aug 2024',
-          role: 'ML Developer — Internship',
+          role: 'ML Developer, Internship',
           company: 'SPIDR · Argenteuil',
           description:
             'Built a FastAPI-based CV parsing system converting PDF resumes to structured JSON using LLM prompt engineering (Llama, GPT-4). Contributed to an AI agent for automated CV management. Designed a BERT-powered semantic matching engine to score CV–job offer compatibility, backed by a custom database of profiles and postings.'
