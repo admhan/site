@@ -139,7 +139,7 @@ export const homeData = {
     },
     about: {
       title: 'About',
-      image: 'photos/adhannachi.JPG',
+      image: 'photos/adhannachi.PNG',
       paragraphs: [
         'I\'m an Artificial Intelligence and Data Science engineer completing a Master\'s in Artificial Intelligence, Systems and Data (IASD) at Université Paris-Dauphine PSL, a selective program co-accredited with ENS and Mines Paris. My academic path started with a Classe Préparatoire (Maths & Physics) at Lycée Paul Éluard, continued through an engineering track at Université Paris-Saclay, then pivoted into a full AI specialization at Dauphine.',
         'My work bridges research depth and engineering rigor. At Sézane, I worked on estimating the causal effect of CRM actions from purely observational data, the core subject of my Master\'s thesis. At House of Communication, I designed AI agents and MCP tooling to accelerate AI adoption at scale. At SPIDR, I built an LLM-powered CV parsing system and a BERT-based semantic matching engine.',
