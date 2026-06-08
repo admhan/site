@@ -15,7 +15,7 @@ export const homeData = {
     },
     about: {
       title: 'À propos',
-      image: 'photos/adhannachi.JPG',
+      image: 'photos/adhannachi.PNG',
       paragraphs: [
         'Ingénieur ML & IA, je termine un Master Intelligence Artificielle, Systèmes et Données (IASD) à l\'Université Paris-Dauphine PSL, programme sélectif co-accrédité avec l\'ENS et Mines Paris. Après une classe préparatoire MP au lycée Paul Éluard et une filière ingénieur à l\'Université Paris-Saclay, j\'ai orienté mon parcours vers une spécialisation complète en IA appliquée.',
         'Mes expériences couvrent à la fois la recherche et la production. Chez Sézane, j\'ai travaillé sur l\'estimation de l\'effet causal des actions CRM à partir de données observationnelles, un sujet au cœur de mon mémoire de Master. Chez House of Communication, j\'ai conçu des agents et outils MCP pour accélérer l\'adoption de l\'IA à l\'échelle d\'un groupe. Chez SPIDR, j\'ai développé un système de parsing de CVs par LLM et un moteur de matching sémantique.',
